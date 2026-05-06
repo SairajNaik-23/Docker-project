@@ -39,13 +39,13 @@ A modern full-stack web application to manage student records using CRUD operati
 
 ## 📂 Project Structure
 
-student-management-system/
-│
-├── frontend/
-├── backend/
-├── docs/
-├── docker-compose.yml
-└── README.md
+- student-management-system/
+- │
+- ├── frontend/
+- ├── backend/
+- ├── docs/
+- ├── docker-compose.yml
+- └── README.md
 
 ----
 
