@@ -42,12 +42,12 @@ cd backend
 
 ## ⚙️ Step 4: Configure Database
 
-vim src/main/resources/application.properties
+nano src/main/resources/application.properties
 
 server.port=8080
 spring.datasource.url=jdbc:mariadb://<DB_HOST>:3306/<DB_NAME>
-spring.datasource.username=<DB_USER>
-spring.datasource.password=<DB_PASS>
+spring.datasource.username= admin
+spring.datasource.password= <password> 
 
 ---
 
@@ -59,7 +59,7 @@ mvn clean package
 
 ## ▶️ Step 6: Run Application
 ```
-java -jar target/spring-backend-v1.jar
+java -jar target/Sai-backend-v1.jar
 ```
 ---
 
@@ -75,7 +75,7 @@ http://localhost:8080
 ```
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY target/spring-backend-v1.jar app.jar
+COPY target/Sai-backend-v1.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","app.jar"]
 ```
@@ -83,13 +83,13 @@ ENTRYPOINT ["java","-jar","app.jar"]
 
 ## ▶️ Build Docker Image
 ```
-docker build -t spring-backend .
+docker build -t Sai-backend .
 ```
 ---
 
 ## 🚀 Run Container
 ```
-docker run -d -p 8080:8080 spring-backend
+docker run -d -p 8080:8080 Sai-backend
 ```
 ---
 
