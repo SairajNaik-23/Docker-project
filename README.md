@@ -33,3 +33,54 @@ A modern full-stack web application to manage student records using CRUD operati
 - MariaDB / AWS RDS
 
 ----
+
+
+---
+
+## 📂 Project Structure
+
+student-management-system/
+│
+├── frontend/
+├── backend/
+├── docs/
+├── docker-compose.yml
+└── README.md
+
+----
+
+
+---
+
+## 📖 Documentation
+
+- Frontend → docs/frontend.md  
+- Backend → docs/backend.md  
+- Database → docs/database.md  
+
+---
+
+## 🖼️ Preview
+
+<p align="center">
+  <img src="Screenshot/result.png" width="900" alt="App Preview">
+</p>
+
+---
+
+## 📦 Prerequisites
+
+- Node.js & npm
+- Java JDK 17+
+- Maven
+- MariaDB
+- Docker (optional)
+
+---
+
+## ⚙️ Manual Setup
+
+### 1️⃣ Database Setup
+
+```sql
+CREATE DATABASE student_db;
