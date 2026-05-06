@@ -43,7 +43,7 @@ npm install
 
 ## ⚙️ 4. Configure Environment Variables
 ```
-vim .env
+nano .env
 ```
 ---
 ```
@@ -99,8 +99,8 @@ CMD ["nginx", "-g", "daemon off;"]
 
 ## ▶️ Run Docker
 ```
-docker build -t react-frontend .
-docker run -d -p 80:80 react-frontend
+docker build -t frontend .
+docker run -d -p 80:80 frontend
 ```
 ---
 
