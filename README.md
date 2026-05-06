@@ -34,9 +34,6 @@ A modern full-stack web application to manage student records using CRUD operati
 
 ----
 
-
----
-
 ## 📂 Project Structure
 
 - student-management-system/
@@ -48,9 +45,6 @@ A modern full-stack web application to manage student records using CRUD operati
 - └── README.md
 
 ----
-
-
----
 
 ## 📖 Documentation
 
@@ -84,8 +78,6 @@ A modern full-stack web application to manage student records using CRUD operati
 mysql -h <rds-endpoint> -u admin -p
 ```
 
----
-
 ### Create Database
 
 ```sql
@@ -95,8 +87,6 @@ CREATE DATABASE student_db;
 ```sql
 USE student_db;
 ```
-
----
 
 ### Create Students Table
 
@@ -114,14 +104,11 @@ PRIMARY KEY (id)
 );
 ```
 
----
-
 ### Exit MySQL
 
 ```bash
 exit
 ```
----
 ### Configure Database Connection
 
 Edit file:
