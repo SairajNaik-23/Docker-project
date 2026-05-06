@@ -63,7 +63,7 @@ A modern full-stack web application to manage student records using CRUD operati
 ## 🖼️ Preview
 
 <p align="center">
-  <img src="Screenshot/result.png" width="900" alt="App Preview">
+  <img src="C:\Users\saira\OneDrive\Pictures\Screenshots 1\Screenshot 2026-04-10 190820.png" width="900" alt="App Preview">
 </p>
 
 ---
