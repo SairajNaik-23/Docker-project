@@ -25,3 +25,11 @@ A modern full-stack web application to manage student records using CRUD operati
 ---
 
 ## 🏗️ Architecture
+
+- React (Frontend)
+-  ↓
+- Spring Boot (Backend)
+-  ↓
+- MariaDB / AWS RDS
+
+----
