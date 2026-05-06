@@ -1,12 +1,20 @@
+
 ### Edit src file add the RDS Endpoint link for DB Connection
----
-server.port=8080
+ - use following script to install docker and mysqlclient
 
-spring.datasource.url=jdbc:mariadb://database-1.c7uy0gsyobtq.ap-south-1.rds.amazonaws.com:3306/student_db?sslMode=trust
-spring.datasource.username=admin
-spring.datasource.password=redhat123
+````
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-
----
+#!/bin/bash
+sudo apt update
+sudo apt install mysql-client-core-8.0 -y
+cd /home/ubuntu/
+git clone https://github.com/abhipraydhoble/studentapplication.git
+sudo apt update -y
+sudo apt install docker.io  -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker ubuntu
+newgrp docker
+sudo chmod 777 /var/run/docker.sock
+docker --version
+````
