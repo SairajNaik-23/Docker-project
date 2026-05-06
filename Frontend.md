@@ -23,21 +23,21 @@
 - metadata: 
 -    name: frontend 
 -    labels:
--       app: frontend
+-  app: frontend
 -  spec:
 -  replicas: 3
 -  selector:
 -    matchLabels:
--      app: frontend
+- app: frontend
 -  template:
 -    metadata:
--      name: frontend
--      labels:
--        app: frontend
+-  name: frontend
+-  labels:
+-  app: frontend
 -   spec:
--     containers:
--         name: frontend
--          image: r123mahajan/frontend:latest
--          ports:
--             containerPort: 80
+-  containers:
+-  name: frontend
+-  image: r123mahajan/frontend:latest
+- ports:
+-  containerPort: 80
 -----
