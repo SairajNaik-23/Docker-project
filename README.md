@@ -78,9 +78,89 @@ A modern full-stack web application to manage student records using CRUD operati
 
 ---
 
-## ⚙️ Manual Setup
+### ⚙️ Manual Setup Login to RDS
 
-### 1️⃣ Database Setup
+```bash
+mysql -h <rds-endpoint> -u admin -p
+```
+
+---
+
+### Create Database
 
 ```sql
 CREATE DATABASE student_db;
+```
+
+```sql
+USE student_db;
+```
+
+---
+
+### Create Students Table
+
+```sql
+CREATE TABLE students (
+id bigint NOT NULL AUTO_INCREMENT,
+name varchar(255),
+email varchar(255),
+course varchar(255),
+student_class varchar(255),
+percentage double,
+branch varchar(255),
+mobile_number varchar(255),
+PRIMARY KEY (id)
+);
+```
+
+---
+
+### Exit MySQL
+
+```bash
+exit
+```
+---
+### Configure Database Connection
+
+Edit file:
+
+```bash
+nano src/main/resources/application.properties
+```
+
+### Build Docker image and push to dockerhub 
+
+````
+docker build -t sairaj09/backend .
+````
+````
+docker push sairaj09/backend
+````
+
+### Create Backend COntainer
+````
+docker run -itd --name backend -p 8080:8080 sairaj09/backend
+````
+### COnfigure Backend Frontend Connection
+
+- edit file
+````
+nano .env
+````
+- add instance ip addresss
+
+### Build Docker image and push to dockerhub 
+
+````
+docker build -t sairaj09frontend .
+````
+````
+docker push asairaj09/frontend
+````
+
+### Create Backend COntainer
+````
+docker run -itd --name frontend -p 80:80 sairaj09/frontend
+````
