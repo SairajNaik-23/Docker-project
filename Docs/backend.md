@@ -110,23 +110,5 @@ spring-backend
 ```
 ---
 
-## 🧠 Troubleshooting
-
-| Issue | Solution |
-|------|---------|
-| App not starting | Check Java version |
-| Port in use | Change port |
-| DB error | Verify credentials |
-| JAR missing | Run mvn clean package |
-
----
-
-## 🎯 Summary
-
-- Install Java & Maven  
-- Configure DB  
-- Build → mvn clean package  
-- Run → java -jar  
-- Docker → containerized deployment  
 
 
