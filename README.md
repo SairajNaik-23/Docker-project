@@ -151,3 +151,4 @@ docker push asairaj09/frontend
 ````
 docker run -itd --name frontend -p 80:80 sairaj09/frontend
 ````
+<img width="1867" height="923" alt="image" src="https://github.com/user-attachments/assets/4287e8e8-3518-42f6-9cf2-750434309ba3" />
