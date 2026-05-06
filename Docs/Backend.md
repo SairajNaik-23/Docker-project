@@ -100,14 +100,7 @@ docker run -d -p 8080:8080 spring-backend
 ```
 ---
 
-## ⚙️ Run with Environment Variables
-```
-docker run -d -p 8080:8080 \
--e SPRING_DATASOURCE_URL=jdbc:mariadb://<DB_HOST>:3306/<DB_NAME> \
--e SPRING_DATASOURCE_USERNAME=<DB_USER> \
--e SPRING_DATASOURCE_PASSWORD=<DB_PASS> \
-spring-backend
-```
+
 ---
 
 
