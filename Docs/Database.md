@@ -24,7 +24,7 @@ mysql_secure_installation
 
 ## 🧑‍💻 3. Login to MariaDB
 ```
-mysql -u root -p
+mysql -h <rds endpoint> -u root -p
 ```
 ---
 
