@@ -69,13 +69,6 @@ http://localhost:8080
 ```
 ---
 
-## 🔄 Step 7: Run in Background
-```
-nohup java -jar target/spring-backend-v1.jar > app.log 2>&1 &
-tail -f app.log
-```
----
-
 # 🐳 Docker Setup (Backend)
 
 ## 📦 Dockerfile
